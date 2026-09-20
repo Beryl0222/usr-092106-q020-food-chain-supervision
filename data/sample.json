@@ -1,0 +1,9 @@
+{
+  "event_id": "092106-020-sample-001",
+  "event_type": "LICENSE_VERIFIED",
+  "aggregate_type": "food_business",
+  "aggregate_id": "food_chain_supervision-001",
+  "occurred_at": "2026-09-20T15:00:00+08:00",
+  "version": 1,
+  "summary": "登记食品全链监督图谱的首条领域记录"
+}
