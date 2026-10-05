@@ -5,5 +5,11 @@
   "aggregate_id": "food_chain_supervision-001",
   "occurred_at": "2026-09-20T15:00:00+08:00",
   "version": 1,
-  "summary": "登记食品全链监督图谱的首条领域记录"
+  "summary": "登记食品全链监督图谱的首条领域记录",
+  "source_department": "market_regulation",
+  "payload": {
+    "license_no": "JY-SAMPLE-001",
+    "result": "pass",
+    "verified_by": "market_regulation"
+  }
 }

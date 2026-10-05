@@ -14,25 +14,71 @@
   "properties": {
     "event_id": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "description": "仓库事件标识，跨部门重复上报据此幂等去重"
     },
     "event_type": {
       "type": "string",
       "enum": [
+        "BUSINESS_REGISTERED",
+        "BENEFICIAL_OWNER_LINKED",
+        "LICENSE_ISSUED",
         "LICENSE_VERIFIED",
+        "PREMISES_VERIFIED",
+        "SHOP_LISTED",
+        "SHOP_BINDING_REVIEWED",
+        "LOT_HARVESTED",
+        "LOT_PACKED",
+        "LOT_RELABELED",
         "LOT_TRANSFERRED",
+        "LOT_MERGED",
+        "LOT_SPLIT",
+        "LOT_HELD",
+        "LOT_DISPOSITIONED",
+        "ORDER_PLACED",
+        "ORDER_FULFILLED",
+        "ORDER_DELIVERED",
+        "ORDER_LATE",
+        "ORDER_RECALLED_FROM_CONSUMER",
+        "METHOD_PUBLISHED",
+        "SAMPLE_DRAWN",
         "SAMPLE_TESTED",
+        "SAMPLE_RETESTED",
+        "SAMPLE_APPEAL_DECIDED",
         "RISK_CONTROLLED",
-        "RECALL_RECONCILED"
+        "RISK_CLEARED",
+        "RECALL_OPENED",
+        "DOWNSTREAM_NOTIFIED",
+        "RECALL_REPORTED",
+        "RECALL_RECONCILED",
+        "RECALL_CLOSED",
+        "PUBLIC_ALERT_PUBLISHED",
+        "PUBLIC_ALERT_RETRACTED",
+        "COMPLAINT_FILED",
+        "CASE_OPENED",
+        "ENFORCEMENT_DECIDED",
+        "CORRECTION_SUBMITTED",
+        "EVIDENCE_LOCKED",
+        "RULE_PUBLISHED",
+        "CONTROL_BREACH_RECORDED"
       ]
     },
     "aggregate_type": {
       "type": "string",
       "enum": [
         "food_business",
+        "licensed_premises",
+        "platform_shop",
         "food_lot",
+        "cold_chain_handoff",
         "inspection_sample",
-        "recall_case"
+        "test_method",
+        "food_order",
+        "complaint",
+        "enforcement_case",
+        "recall_case",
+        "risk_rule",
+        "method_version"
       ]
     },
     "aggregate_id": {
@@ -50,6 +96,18 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object",
+      "description": "事件载荷，必填字段与受控词表见 src/validator.py:PAYLOAD_RULES"
+    },
+    "source_department": {
+      "type": "string",
+      "enum": ["agriculture", "market_regulation", "health", "public_security", "joint_office", "enterprise", "platform"]
+    },
+    "source_record_id": {
+      "type": "string",
+      "description": "报送部门本地系统编号，不参与仓库幂等判定"
     }
   },
   "additionalProperties": true
