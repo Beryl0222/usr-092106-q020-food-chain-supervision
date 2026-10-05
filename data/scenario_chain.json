@@ -1,0 +1,953 @@
+[
+  {
+    "event_id": "subj-farm-01",
+    "event_type": "SUBJECT_REGISTERED",
+    "aggregate_type": "food_business",
+    "aggregate_id": "bz-farm-01",
+    "occurred_at": "2026-10-03T08:00:00+08:00",
+    "recorded_at": "2026-10-03T08:00:00+08:00",
+    "version": 1,
+    "source_department": "agriculture",
+    "summary": "青山蔬菜种植合作社登记",
+    "payload": {
+      "business_name": "青山蔬菜种植合作社",
+      "business_type": "producer",
+      "department": "agriculture"
+    }
+  },
+  {
+    "event_id": "subj-wholesale-01",
+    "event_type": "SUBJECT_REGISTERED",
+    "aggregate_type": "food_business",
+    "aggregate_id": "bz-wholesale-01",
+    "occurred_at": "2026-10-03T08:10:00+08:00",
+    "recorded_at": "2026-10-03T08:10:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "旺发蔬菜行登记",
+    "payload": {
+      "business_name": "旺发蔬菜行",
+      "business_type": "wholesaler",
+      "department": "market_regulation"
+    }
+  },
+  {
+    "event_id": "subj-distributor-01",
+    "event_type": "SUBJECT_REGISTERED",
+    "aggregate_type": "food_business",
+    "aggregate_id": "bz-distributor-01",
+    "occurred_at": "2026-10-03T08:20:00+08:00",
+    "recorded_at": "2026-10-03T08:20:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "鲜达配送公司登记",
+    "payload": {
+      "business_name": "鲜达配送有限公司",
+      "business_type": "distributor",
+      "department": "market_regulation"
+    }
+  },
+  {
+    "event_id": "subj-restaurant-01",
+    "event_type": "SUBJECT_REGISTERED",
+    "aggregate_type": "food_business",
+    "aggregate_id": "bz-restaurant-group-01",
+    "occurred_at": "2026-10-03T08:30:00+08:00",
+    "recorded_at": "2026-10-03T08:30:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "悦味餐饮管理有限公司登记",
+    "payload": {
+      "business_name": "悦味餐饮管理有限公司",
+      "business_type": "catering",
+      "department": "market_regulation"
+    }
+  },
+  {
+    "event_id": "subj-restaurant-02",
+    "event_type": "SUBJECT_REGISTERED",
+    "aggregate_type": "food_business",
+    "aggregate_id": "bz-restaurant-group-02",
+    "occurred_at": "2026-10-03T08:31:00+08:00",
+    "recorded_at": "2026-10-03T08:31:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "悦味餐饮第二分店主体登记",
+    "payload": {
+      "business_name": "悦味餐饮（城南）分店",
+      "business_type": "catering",
+      "department": "market_regulation"
+    }
+  },
+  {
+    "event_id": "bo-restaurant-01",
+    "event_type": "BENEFICIAL_OWNER_DECLARED",
+    "aggregate_type": "food_business",
+    "aggregate_id": "bz-restaurant-group-01",
+    "occurred_at": "2026-10-03T08:40:00+08:00",
+    "recorded_at": "2026-10-03T08:40:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "受益人声明：厉强",
+    "payload": {
+      "owner_name": "厉强",
+      "owner_id_no": "3301**********1234",
+      "declared_at": "2026-10-03T08:40:00+08:00"
+    }
+  },
+  {
+    "event_id": "bo-restaurant-02",
+    "event_type": "BENEFICIAL_OWNER_DECLARED",
+    "aggregate_type": "food_business",
+    "aggregate_id": "bz-restaurant-group-02",
+    "occurred_at": "2026-10-03T08:41:00+08:00",
+    "recorded_at": "2026-10-03T08:41:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "受益人声明：厉强",
+    "payload": {
+      "owner_name": "厉强",
+      "owner_id_no": "3301**********1234",
+      "declared_at": "2026-10-03T08:41:00+08:00"
+    }
+  },
+  {
+    "event_id": "lic-pr-wholesale",
+    "event_type": "PREMISES_LICENSED",
+    "aggregate_type": "premises",
+    "aggregate_id": "pr-wholesale-01",
+    "occurred_at": "2026-10-03T09:00:00+08:00",
+    "recorded_at": "2026-10-03T09:00:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "批发市场摊位食品经营许可签发",
+    "payload": {
+      "premises_id": "pr-wholesale-01",
+      "business_id": "bz-wholesale-01",
+      "address": "城南批发市场B区17号",
+      "license_no": "JY12026100301",
+      "scope": "食用农产品销售"
+    }
+  },
+  {
+    "event_id": "ver-pr-wholesale",
+    "event_type": "PREMISES_VERIFIED",
+    "aggregate_type": "premises",
+    "aggregate_id": "pr-wholesale-01",
+    "occurred_at": "2026-10-03T10:00:00+08:00",
+    "recorded_at": "2026-10-03T10:00:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "实地核查：批发市场摊位属实",
+    "payload": {
+      "premises_id": "pr-wholesale-01",
+      "result": "pass",
+      "verifier_department": "market_regulation",
+      "checked_at": "2026-10-03T10:00:00+08:00"
+    }
+  },
+  {
+    "event_id": "lic-pr-kitchen",
+    "event_type": "PREMISES_LICENSED",
+    "aggregate_type": "premises",
+    "aggregate_id": "pr-kitchen-01",
+    "occurred_at": "2026-10-03T09:05:00+08:00",
+    "recorded_at": "2026-10-03T09:05:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "餐饮经营许可签发",
+    "payload": {
+      "premises_id": "pr-kitchen-01",
+      "business_id": "bz-restaurant-group-01",
+      "address": "城南街道兴华路9号101室",
+      "license_no": "JY12026200807",
+      "scope": "热食类食品制售"
+    }
+  },
+  {
+    "event_id": "ver-pr-kitchen",
+    "event_type": "PREMISES_VERIFIED",
+    "aggregate_type": "premises",
+    "aggregate_id": "pr-kitchen-01",
+    "occurred_at": "2026-10-03T10:30:00+08:00",
+    "recorded_at": "2026-10-03T10:30:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "实地核查：该地址为居民住宅，无实际经营门店",
+    "payload": {
+      "premises_id": "pr-kitchen-01",
+      "result": "no_physical_store",
+      "verifier_department": "market_regulation",
+      "checked_at": "2026-10-03T10:30:00+08:00"
+    }
+  },
+  {
+    "event_id": "shop-weipin-01",
+    "event_type": "PLATFORM_SHOP_LISTED",
+    "aggregate_type": "platform_shop",
+    "aggregate_id": "shop-weipin-01",
+    "occurred_at": "2026-10-03T11:00:00+08:00",
+    "recorded_at": "2026-10-03T11:00:00+08:00",
+    "version": 1,
+    "source_department": "platform",
+    "summary": "味拼外卖店铺“悦味轻食”上线",
+    "payload": {
+      "platform": "味拼外卖",
+      "shop_name": "悦味轻食（兴华路店）",
+      "business_id": "bz-restaurant-group-01",
+      "claimed_premises_id": "pr-kitchen-01"
+    }
+  },
+  {
+    "event_id": "shop-weipin-01-verify",
+    "event_type": "DELIVERY_PLATFORM_VERIFIED",
+    "aggregate_type": "platform_shop",
+    "aggregate_id": "shop-weipin-01",
+    "occurred_at": "2026-10-03T11:05:00+08:00",
+    "recorded_at": "2026-10-03T11:05:00+08:00",
+    "version": 2,
+    "source_department": "platform",
+    "summary": "外卖平台自检显示通过",
+    "payload": {
+      "platform": "味拼外卖",
+      "result": "pass",
+      "verified_at": "2026-10-03T11:05:00+08:00"
+    }
+  },
+  {
+    "event_id": "lot-veg-01-reg",
+    "event_type": "LOT_REGISTERED",
+    "aggregate_type": "food_lot",
+    "aggregate_id": "lot-veg-01",
+    "occurred_at": "2026-10-03T12:00:00+08:00",
+    "recorded_at": "2026-10-03T12:00:00+08:00",
+    "version": 1,
+    "source_department": "agriculture",
+    "summary": "产地批次：大白菜1000公斤",
+    "payload": {
+      "product_name": "大白菜",
+      "producer_business_id": "bz-farm-01",
+      "quantity": 1000,
+      "unit": "kg"
+    }
+  },
+  {
+    "event_id": "lot-veg-01-transit",
+    "event_type": "LOT_TRANSFERRED",
+    "aggregate_type": "food_lot",
+    "aggregate_id": "lot-veg-01",
+    "occurred_at": "2026-10-03T13:00:00+08:00",
+    "recorded_at": "2026-10-03T13:00:00+08:00",
+    "version": 2,
+    "source_department": "agriculture",
+    "summary": "产地发运，在途",
+    "payload": {
+      "from_holder_id": "bz-farm-01",
+      "to_holder_id": "bz-wholesale-01",
+      "quantity": 1000,
+      "unit": "kg",
+      "handover_status": "in_transit"
+    }
+  },
+  {
+    "event_id": "lot-veg-01-received",
+    "event_type": "LOT_TRANSFERRED",
+    "aggregate_type": "food_lot",
+    "aggregate_id": "lot-veg-01",
+    "occurred_at": "2026-10-03T16:00:00+08:00",
+    "recorded_at": "2026-10-03T16:00:00+08:00",
+    "version": 3,
+    "source_department": "agriculture",
+    "summary": "批发市场签收",
+    "payload": {
+      "from_holder_id": "bz-farm-01",
+      "to_holder_id": "bz-wholesale-01",
+      "quantity": 1000,
+      "unit": "kg",
+      "handover_status": "received"
+    }
+  },
+  {
+    "event_id": "lot-veg-01p-relabel",
+    "event_type": "LOT_RELABELED",
+    "aggregate_type": "food_lot",
+    "aggregate_id": "lot-veg-01p",
+    "occurred_at": "2026-10-03T16:30:00+08:00",
+    "recorded_at": "2026-10-03T16:30:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "批发市场更换为“绿色基地直供”包装",
+    "payload": {
+      "source_lot_ids": [
+        "lot-veg-01"
+      ],
+      "new_package_label": "绿色基地直供大白菜",
+      "operator_business_id": "bz-wholesale-01",
+      "location": "城南批发市场B区17号",
+      "quantity": 1000,
+      "unit": "kg"
+    }
+  },
+  {
+    "event_id": "lot-veg-01p-a-split",
+    "event_type": "LOT_SPLIT",
+    "aggregate_type": "food_lot",
+    "aggregate_id": "lot-veg-01p-a",
+    "occurred_at": "2026-10-03T17:00:00+08:00",
+    "recorded_at": "2026-10-03T17:00:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "拆出300公斤供配送",
+    "payload": {
+      "parent_lot_id": "lot-veg-01p",
+      "quantity": 300,
+      "unit": "kg"
+    }
+  },
+  {
+    "event_id": "lot-veg-01p-b-split",
+    "event_type": "LOT_SPLIT",
+    "aggregate_type": "food_lot",
+    "aggregate_id": "lot-veg-01p-b",
+    "occurred_at": "2026-10-03T17:05:00+08:00",
+    "recorded_at": "2026-10-03T17:05:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "剩余700公斤留档批发",
+    "payload": {
+      "parent_lot_id": "lot-veg-01p",
+      "quantity": 700,
+      "unit": "kg"
+    }
+  },
+  {
+    "event_id": "lot-a-cold",
+    "event_type": "COLD_CHAIN_HANDOVER",
+    "aggregate_type": "food_lot",
+    "aggregate_id": "lot-veg-01p-a",
+    "occurred_at": "2026-10-03T17:30:00+08:00",
+    "recorded_at": "2026-10-03T17:30:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "冷链装车交接",
+    "payload": {
+      "transport_leg_id": "leg-20261003-07",
+      "from_party": "bz-wholesale-01",
+      "to_party": "bz-distributor-01",
+      "carrier": "鲜达冷链车浙A·7F32",
+      "temp_c": 4.0
+    }
+  },
+  {
+    "event_id": "lot-a-transit",
+    "event_type": "LOT_TRANSFERRED",
+    "aggregate_type": "food_lot",
+    "aggregate_id": "lot-veg-01p-a",
+    "occurred_at": "2026-10-03T18:00:00+08:00",
+    "recorded_at": "2026-10-03T18:00:00+08:00",
+    "version": 3,
+    "source_department": "market_regulation",
+    "summary": "配送发往餐饮方，至次日清晨仍在途",
+    "payload": {
+      "from_holder_id": "bz-distributor-01",
+      "to_holder_id": "bz-restaurant-group-01",
+      "quantity": 300,
+      "unit": "kg",
+      "handover_status": "in_transit"
+    }
+  },
+  {
+    "event_id": "method-rapid-01",
+    "event_type": "TEST_METHOD_REGISTERED",
+    "aggregate_type": "test_method",
+    "aggregate_id": "m-rapid-01",
+    "occurred_at": "2026-10-03T08:00:00+08:00",
+    "recorded_at": "2026-10-03T08:00:00+08:00",
+    "version": 1,
+    "source_department": "agriculture",
+    "summary": "农药残留快速检测方法登记",
+    "payload": {
+      "method_id": "m-rapid-01",
+      "standard_no": "KJ-2026-R01",
+      "category": "rapid",
+      "analyte": "有机磷类农药残留"
+    }
+  },
+  {
+    "event_id": "method-lab-01",
+    "event_type": "TEST_METHOD_REGISTERED",
+    "aggregate_type": "test_method",
+    "aggregate_id": "m-lab-01",
+    "occurred_at": "2026-10-03T08:01:00+08:00",
+    "recorded_at": "2026-10-03T08:01:00+08:00",
+    "version": 1,
+    "source_department": "health",
+    "summary": "实验室定量检测方法登记",
+    "payload": {
+      "method_id": "m-lab-01",
+      "standard_no": "GB 23200.121-2026",
+      "category": "lab",
+      "analyte": "敌敌畏"
+    }
+  },
+  {
+    "event_id": "samp-01-drawn",
+    "event_type": "SAMPLE_DRAWN",
+    "aggregate_type": "inspection_sample",
+    "aggregate_id": "samp-01",
+    "occurred_at": "2026-10-04T07:30:00+08:00",
+    "recorded_at": "2026-10-04T07:30:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "在配送车辆上对在途300公斤批次抽样",
+    "payload": {
+      "lot_id": "lot-veg-01p-a",
+      "draw_department": "market_regulation",
+      "drawn_at": "2026-10-04T07:30:00+08:00"
+    }
+  },
+  {
+    "event_id": "samp-01-rapid",
+    "event_type": "SAMPLE_TESTED",
+    "aggregate_type": "inspection_sample",
+    "aggregate_id": "samp-01",
+    "occurred_at": "2026-10-04T08:00:00+08:00",
+    "recorded_at": "2026-10-04T08:00:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "快检阳性：有机磷类农药残留",
+    "payload": {
+      "lot_id": "lot-veg-01p-a",
+      "method_id": "m-rapid-01",
+      "category": "rapid",
+      "analyte": "有机磷类农药残留",
+      "result": "positive"
+    }
+  },
+  {
+    "event_id": "order-1001",
+    "event_type": "ORDER_RECORDED",
+    "aggregate_type": "order",
+    "aggregate_id": "or-1001",
+    "occurred_at": "2026-10-03T20:00:00+08:00",
+    "recorded_at": "2026-10-03T20:00:00+08:00",
+    "version": 1,
+    "source_department": "platform",
+    "summary": "平台订单：白菜半成品",
+    "payload": {
+      "platform": "味拼外卖",
+      "shop_id": "shop-weipin-01",
+      "business_id": "bz-restaurant-group-01",
+      "lot_id": "lot-veg-01p-a",
+      "quantity": 2,
+      "unit": "kg",
+      "placed_at": "2026-10-03T20:00:00+08:00",
+      "status": "completed"
+    }
+  },
+  {
+    "event_id": "order-1002",
+    "event_type": "ORDER_RECORDED",
+    "aggregate_type": "order",
+    "aggregate_id": "or-1002",
+    "occurred_at": "2026-10-03T21:00:00+08:00",
+    "recorded_at": "2026-10-04T09:30:00+08:00",
+    "version": 1,
+    "source_department": "platform",
+    "summary": "平台订单（平台延迟至控制后才报送）",
+    "payload": {
+      "platform": "味拼外卖",
+      "shop_id": "shop-weipin-01",
+      "business_id": "bz-restaurant-group-01",
+      "lot_id": "lot-veg-01p-a",
+      "quantity": 1,
+      "unit": "kg",
+      "placed_at": "2026-10-03T21:00:00+08:00",
+      "status": "completed"
+    }
+  },
+  {
+    "event_id": "risk-risk-2026-1004-01-v1",
+    "event_type": "RISK_CONTROLLED",
+    "aggregate_type": "risk_case",
+    "aggregate_id": "risk-2026-1004-01",
+    "occurred_at": "2026-10-04T08:30:00+08:00",
+    "recorded_at": "2026-10-04T08:30:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "快检阳性触发控制：samp-01 / lot-veg-01p-a",
+    "payload": {
+      "source_sample_id": "samp-01",
+      "lot_id": "lot-veg-01p-a",
+      "measures": [
+        "封存全部在途与在售同链批次",
+        "平台店铺下架停售",
+        "暂停批发商户出库"
+      ],
+      "scope_snapshot": {
+        "source_lot_id": "lot-veg-01p-a",
+        "affected_lot_ids": [
+          "lot-veg-01",
+          "lot-veg-01p",
+          "lot-veg-01p-a",
+          "lot-veg-01p-b"
+        ],
+        "in_transit": [
+          {
+            "lot_id": "lot-veg-01p-a",
+            "from_holder_id": "bz-distributor-01",
+            "to_holder_id": "bz-restaurant-group-01",
+            "quantity": 300.0,
+            "unit": "kg"
+          }
+        ],
+        "on_hand": [
+          {
+            "lot_id": "lot-veg-01p-b",
+            "holder_id": "bz-wholesale-01",
+            "quantity": 700.0,
+            "unit": "kg"
+          }
+        ],
+        "sold_orders": [
+          {
+            "order_id": "or-1001",
+            "recorded_at": "2026-10-03T20:00:00+08:00",
+            "platform": "味拼外卖",
+            "shop_id": "shop-weipin-01",
+            "business_id": "bz-restaurant-group-01",
+            "lot_id": "lot-veg-01p-a",
+            "quantity": 2,
+            "unit": "kg",
+            "placed_at": "2026-10-03T20:00:00+08:00",
+            "status": "completed"
+          },
+          {
+            "order_id": "or-1002",
+            "recorded_at": "2026-10-04T09:30:00+08:00",
+            "platform": "味拼外卖",
+            "shop_id": "shop-weipin-01",
+            "business_id": "bz-restaurant-group-01",
+            "lot_id": "lot-veg-01p-a",
+            "quantity": 1,
+            "unit": "kg",
+            "placed_at": "2026-10-03T21:00:00+08:00",
+            "status": "completed"
+          }
+        ],
+        "notify_holders": [
+          "bz-distributor-01",
+          "bz-restaurant-group-01",
+          "bz-wholesale-01"
+        ],
+        "notify_shops": [
+          "shop-weipin-01"
+        ]
+      }
+    }
+  },
+  {
+    "event_id": "risk-risk-2026-1004-01-v2",
+    "event_type": "DOWNSTREAM_NOTIFIED",
+    "aggregate_type": "risk_case",
+    "aggregate_id": "risk-2026-1004-01",
+    "occurred_at": "2026-10-04T08:30:00+08:00",
+    "recorded_at": "2026-10-04T08:30:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "通知在途承运方、在售持有者与平台店铺",
+    "payload": {
+      "notice_targets": [
+        "bz-distributor-01",
+        "bz-restaurant-group-01",
+        "bz-wholesale-01",
+        "shop-weipin-01"
+      ]
+    }
+  },
+  {
+    "event_id": "lot-b-illegal-move",
+    "event_type": "LOT_TRANSFERRED",
+    "aggregate_type": "food_lot",
+    "aggregate_id": "lot-veg-01p-b",
+    "occurred_at": "2026-10-04T09:00:00+08:00",
+    "recorded_at": "2026-10-04T09:00:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "控制生效后商户仍向食堂发运100公斤",
+    "payload": {
+      "from_holder_id": "bz-wholesale-01",
+      "to_holder_id": "bz-canteen-01",
+      "quantity": 100,
+      "unit": "kg",
+      "handover_status": "in_transit"
+    }
+  },
+  {
+    "event_id": "order-1003",
+    "event_type": "ORDER_RECORDED",
+    "aggregate_type": "order",
+    "aggregate_id": "or-1003",
+    "occurred_at": "2026-10-04T09:15:00+08:00",
+    "recorded_at": "2026-10-04T09:15:00+08:00",
+    "version": 1,
+    "source_department": "platform",
+    "summary": "控制后平台仍接单",
+    "payload": {
+      "platform": "味拼外卖",
+      "shop_id": "shop-weipin-01",
+      "business_id": "bz-restaurant-group-01",
+      "lot_id": "lot-veg-01p-a",
+      "quantity": 3,
+      "unit": "kg",
+      "placed_at": "2026-10-04T09:15:00+08:00",
+      "status": "placed"
+    }
+  },
+  {
+    "event_id": "recall-01-order",
+    "event_type": "RECALL_ORDERED",
+    "aggregate_type": "recall_case",
+    "aggregate_id": "recall-2026-1004-01",
+    "occurred_at": "2026-10-04T10:00:00+08:00",
+    "recorded_at": "2026-10-04T10:00:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "对在途与在售问题批次下达召回令",
+    "payload": {
+      "risk_case_id": "risk-2026-1004-01",
+      "lot_ids": [
+        "lot-veg-01p-a",
+        "lot-veg-01p-b"
+      ]
+    }
+  },
+  {
+    "event_id": "recall-01-rec-1",
+    "event_type": "RECALL_RECONCILED",
+    "aggregate_type": "recall_case",
+    "aggregate_id": "recall-2026-1004-01",
+    "occurred_at": "2026-10-04T14:00:00+08:00",
+    "recorded_at": "2026-10-04T14:00:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "首轮核对：在途300公斤销毁，批发600公斤销毁",
+    "payload": {
+      "entries": [
+        {
+          "lot_id": "lot-veg-01p-a",
+          "quantity": 300,
+          "unit": "kg",
+          "fate": "destroyed",
+          "handler": "bz-distributor-01"
+        },
+        {
+          "lot_id": "lot-veg-01p-b",
+          "quantity": 600,
+          "unit": "kg",
+          "fate": "destroyed",
+          "handler": "bz-wholesale-01"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "recall-01-rec-2",
+    "event_type": "RECALL_RECONCILED",
+    "aggregate_type": "recall_case",
+    "aggregate_id": "recall-2026-1004-01",
+    "occurred_at": "2026-10-04T16:00:00+08:00",
+    "recorded_at": "2026-10-04T16:00:00+08:00",
+    "version": 3,
+    "source_department": "market_regulation",
+    "summary": "续报：违规外运100公斤追回并无害化处理",
+    "payload": {
+      "entries": [
+        {
+          "lot_id": "lot-veg-01p-b",
+          "quantity": 100,
+          "unit": "kg",
+          "fate": "harmless_treated",
+          "handler": "bz-canteen-01"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "samp-01-lab",
+    "event_type": "LAB_RETEST_RECORDED",
+    "aggregate_type": "inspection_sample",
+    "aggregate_id": "samp-01",
+    "occurred_at": "2026-10-05T10:00:00+08:00",
+    "recorded_at": "2026-10-05T10:00:00+08:00",
+    "version": 3,
+    "source_department": "health",
+    "summary": "实验室定量复检：敌敌畏阳性，正式确认",
+    "payload": {
+      "original_sample_id": "samp-01",
+      "method_id": "m-lab-01",
+      "conclusion": "positive",
+      "value": 0.32,
+      "unit": "mg/kg"
+    }
+  },
+  {
+    "event_id": "rule-penalty-v",
+    "event_type": "RULE_VERSION_PUBLISHED",
+    "aggregate_type": "rule_set",
+    "aggregate_id": "rs-food-penalty",
+    "occurred_at": "2026-10-05T08:00:00+08:00",
+    "recorded_at": "2026-10-05T08:00:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "食品安全处罚裁量规则2026版发布",
+    "payload": {
+      "scope": "food_safety_penalty",
+      "version": "2026.03",
+      "effective_at": "2026-03-01T00:00:00+08:00"
+    }
+  },
+  {
+    "event_id": "ev-001-sealed",
+    "event_type": "EVIDENCE_SEALED",
+    "aggregate_type": "evidence_item",
+    "aggregate_id": "ev-sample-01",
+    "occurred_at": "2026-10-04T08:30:00+08:00",
+    "recorded_at": "2026-10-04T08:30:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "样本与快检原始记录封存",
+    "payload": {
+      "sealed_by": "market_regulation",
+      "custody_location": "市监证据柜A-12",
+      "related_case_id": "ec-wholesale-01",
+      "content_hash": "sha256:9a1f...c021"
+    }
+  },
+  {
+    "event_id": "ev-002-sealed",
+    "event_type": "EVIDENCE_SEALED",
+    "aggregate_type": "evidence_item",
+    "aggregate_id": "ev-relabel-01",
+    "occurred_at": "2026-10-04T11:00:00+08:00",
+    "recorded_at": "2026-10-04T11:00:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "换包监控与交易流水封存",
+    "payload": {
+      "sealed_by": "market_regulation",
+      "custody_location": "市监证据柜A-13",
+      "related_case_id": "ec-restaurant-01",
+      "content_hash": "sha256:4b7e...88aa"
+    }
+  },
+  {
+    "event_id": "complaint-01",
+    "event_type": "COMPLAINT_FILED",
+    "aggregate_type": "complaint",
+    "aggregate_id": "comp-01",
+    "occurred_at": "2026-10-04T12:00:00+08:00",
+    "recorded_at": "2026-10-04T12:00:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "群众举报幽灵外卖店铺（举报人要求保密）",
+    "payload": {
+      "complainant_ref": "姓名/联系方式：138****6621（保密）",
+      "business_id": "bz-restaurant-group-01",
+      "received_at": "2026-10-04T12:00:00+08:00",
+      "content": "平台“悦味轻食”无实际门店"
+    }
+  },
+  {
+    "event_id": "ec-ws-open",
+    "event_type": "ENFORCEMENT_OPENED",
+    "aggregate_type": "enforcement_case",
+    "aggregate_id": "ec-wholesale-01",
+    "occurred_at": "2026-10-05T09:00:00+08:00",
+    "recorded_at": "2026-10-05T09:00:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "对旺发蔬菜行换包及违规流动立案",
+    "payload": {
+      "business_id": "bz-wholesale-01",
+      "opened_reason": "问题批次换包且控制后违规外运"
+    }
+  },
+  {
+    "event_id": "ec-ws-decision",
+    "event_type": "ENFORCEMENT_DECISION",
+    "aggregate_type": "enforcement_case",
+    "aggregate_id": "ec-wholesale-01",
+    "occurred_at": "2026-10-05T15:00:00+08:00",
+    "recorded_at": "2026-10-05T15:00:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "作出罚款及没收违法所得处罚",
+    "payload": {
+      "decision_type": "fine_and_confiscation",
+      "rule_set_id": "rs-food-penalty",
+      "rule_version": "2026.03",
+      "evidence_ids": [
+        "ev-sample-01",
+        "ev-relabel-01"
+      ],
+      "lot_ids": [
+        "lot-veg-01p-a",
+        "lot-veg-01p-b"
+      ]
+    }
+  },
+  {
+    "event_id": "ec-ws-appeal",
+    "event_type": "APPEAL_FILED",
+    "aggregate_type": "enforcement_case",
+    "aggregate_id": "ec-wholesale-01",
+    "occurred_at": "2026-10-05T17:00:00+08:00",
+    "recorded_at": "2026-10-05T17:00:00+08:00",
+    "version": 3,
+    "source_department": "market_regulation",
+    "summary": "商户提交申诉（不停止执行，不改变原决定）",
+    "payload": {
+      "target_decision_id": "ec-ws-decision",
+      "reason": "对换包责任认定有异议",
+      "submitted_at": "2026-10-05T17:00:00+08:00"
+    }
+  },
+  {
+    "event_id": "ec-rs-open",
+    "event_type": "ENFORCEMENT_OPENED",
+    "aggregate_type": "enforcement_case",
+    "aggregate_id": "ec-restaurant-01",
+    "occurred_at": "2026-10-05T09:10:00+08:00",
+    "recorded_at": "2026-10-05T09:10:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "对悦味餐饮无证实际场所经营立案",
+    "payload": {
+      "business_id": "bz-restaurant-group-01",
+      "opened_reason": "平台店铺无实际门店且控制后继续接单"
+    }
+  },
+  {
+    "event_id": "ec-rs-decision",
+    "event_type": "ENFORCEMENT_DECISION",
+    "aggregate_type": "enforcement_case",
+    "aggregate_id": "ec-restaurant-01",
+    "occurred_at": "2026-10-05T15:30:00+08:00",
+    "recorded_at": "2026-10-05T15:30:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "吊销许可并处罚款",
+    "payload": {
+      "decision_type": "revocation_and_fine",
+      "rule_set_id": "rs-food-penalty",
+      "rule_version": "2026.03",
+      "evidence_ids": [
+        "ev-relabel-01"
+      ],
+      "lot_ids": [
+        "lot-veg-01p-a"
+      ]
+    }
+  },
+  {
+    "event_id": "ev-002-handover",
+    "event_type": "EVIDENCE_HANDOVER",
+    "aggregate_type": "evidence_item",
+    "aggregate_id": "ev-relabel-01",
+    "occurred_at": "2026-10-05T16:00:00+08:00",
+    "recorded_at": "2026-10-05T16:00:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "证据随案移送公安，哈希核验一致",
+    "payload": {
+      "from_party": "market_regulation",
+      "to_party": "police",
+      "handler": "周某",
+      "hash_check": "sha256:4b7e...88aa"
+    }
+  },
+  {
+    "event_id": "ec-rs-referral",
+    "event_type": "CASE_REFERRAL",
+    "aggregate_type": "enforcement_case",
+    "aggregate_id": "ec-restaurant-01",
+    "occurred_at": "2026-10-05T16:10:00+08:00",
+    "recorded_at": "2026-10-05T16:10:00+08:00",
+    "version": 3,
+    "source_department": "police",
+    "summary": "涉嫌犯罪移送公安机关",
+    "payload": {
+      "to_department": "police",
+      "police_case_no": "A公食刑移〔2026〕042号",
+      "evidence_ids": [
+        "ev-relabel-01"
+      ]
+    }
+  },
+  {
+    "event_id": "ca-01-submit",
+    "event_type": "CORRECTIVE_ACTION_SUBMITTED",
+    "aggregate_type": "corrective_action",
+    "aggregate_id": "ca-01",
+    "occurred_at": "2026-10-05T18:00:00+08:00",
+    "recorded_at": "2026-10-05T18:00:00+08:00",
+    "version": 1,
+    "source_department": "enterprise",
+    "summary": "批发商户提交换包整改与召回完成报告",
+    "payload": {
+      "business_id": "bz-wholesale-01",
+      "case_ref": "ec-wholesale-01",
+      "description": "停止代客换包，落实进货查验和批次标签留存"
+    }
+  },
+  {
+    "event_id": "ca-01-review",
+    "event_type": "CORRECTIVE_ACTION_REVIEWED",
+    "aggregate_type": "corrective_action",
+    "aggregate_id": "ca-01",
+    "occurred_at": "2026-10-06T10:00:00+08:00",
+    "recorded_at": "2026-10-06T10:00:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "整改复核通过",
+    "payload": {
+      "result": "accepted",
+      "reviewer_department": "market_regulation"
+    }
+  },
+  {
+    "event_id": "alert-01-pub",
+    "event_type": "PUBLIC_ALERT_PUBLISHED",
+    "aggregate_type": "public_alert",
+    "aggregate_id": "alert-01",
+    "occurred_at": "2026-10-05T18:30:00+08:00",
+    "recorded_at": "2026-10-05T18:30:00+08:00",
+    "version": 1,
+    "source_department": "market_regulation",
+    "summary": "发布正式风险提示",
+    "payload": {
+      "title": "关于“悦味轻食”问题大白菜的风险提示",
+      "basis_event_ids": [
+        "ec-rs-decision"
+      ],
+      "risk_level": "medium",
+      "content": "已查实相关批次农药残留超标，店铺已停止经营；10月3日订单可联系平台退款。"
+    }
+  },
+  {
+    "event_id": "alert-01-update",
+    "event_type": "PUBLIC_ALERT_UPDATED",
+    "aggregate_type": "public_alert",
+    "aggregate_id": "alert-01",
+    "occurred_at": "2026-10-06T11:00:00+08:00",
+    "recorded_at": "2026-10-06T11:00:00+08:00",
+    "version": 2,
+    "source_department": "market_regulation",
+    "summary": "召回与整改完成，更新提示状态",
+    "payload": {
+      "status": "resolved",
+      "basis_event_id": "ca-01-review"
+    }
+  }
+]

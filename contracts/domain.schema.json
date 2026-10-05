@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "食品全链监督图谱领域事件",
+  "description": "事件只追加、不改写。事件类型与聚合类型的完整定义以 src/catalog.py 为准；payload 各事件的必填字段由目录与 src/validator.py 强制，本 schema 给出信封约束与公共载荷字段。",
   "type": "object",
   "required": [
     "event_id",
@@ -14,25 +15,68 @@
   "properties": {
     "event_id": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "description": "仓库事件标识，跨部门重复报送按此标识去重"
     },
     "event_type": {
       "type": "string",
       "enum": [
-        "LICENSE_VERIFIED",
+        "SUBJECT_REGISTERED",
+        "BENEFICIAL_OWNER_DECLARED",
+        "PREMISES_LICENSED",
+        "PREMISES_VERIFIED",
+        "PLATFORM_SHOP_LISTED",
+        "DELIVERY_PLATFORM_VERIFIED",
+        "LOT_REGISTERED",
+        "LOT_SPLIT",
+        "LOT_MERGED",
+        "LOT_RELABELED",
+        "PROCESSING_RECORDED",
         "LOT_TRANSFERRED",
+        "COLD_CHAIN_HANDOVER",
+        "SAMPLE_DRAWN",
+        "TEST_METHOD_REGISTERED",
         "SAMPLE_TESTED",
+        "LAB_RETEST_RECORDED",
         "RISK_CONTROLLED",
-        "RECALL_RECONCILED"
+        "DOWNSTREAM_NOTIFIED",
+        "CONTROL_LIFTED",
+        "RECALL_ORDERED",
+        "RECALL_RECONCILED",
+        "ORDER_RECORDED",
+        "COMPLAINT_FILED",
+        "ENFORCEMENT_OPENED",
+        "ENFORCEMENT_DECISION",
+        "APPEAL_FILED",
+        "CASE_REFERRAL",
+        "EVIDENCE_SEALED",
+        "EVIDENCE_HANDOVER",
+        "RULE_VERSION_PUBLISHED",
+        "CORRECTIVE_ACTION_SUBMITTED",
+        "CORRECTIVE_ACTION_REVIEWED",
+        "PUBLIC_ALERT_PUBLISHED",
+        "PUBLIC_ALERT_UPDATED",
+        "LICENSE_VERIFIED"
       ]
     },
     "aggregate_type": {
       "type": "string",
       "enum": [
         "food_business",
+        "premises",
+        "platform_shop",
         "food_lot",
         "inspection_sample",
-        "recall_case"
+        "test_method",
+        "order",
+        "complaint",
+        "risk_case",
+        "recall_case",
+        "enforcement_case",
+        "evidence_item",
+        "rule_set",
+        "corrective_action",
+        "public_alert"
       ]
     },
     "aggregate_id": {
@@ -45,11 +89,34 @@
     },
     "version": {
       "type": "integer",
-      "minimum": 1
+      "minimum": 1,
+      "description": "同一聚合内单调递增"
     },
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "source_department": {
+      "type": "string",
+      "enum": [
+        "agriculture",
+        "market_regulation",
+        "health",
+        "police",
+        "joint_office",
+        "platform",
+        "enterprise"
+      ]
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "系统接收时间，晚于 occurred_at 的业务补录视为迟到追加"
+    },
+    "payload": {
+      "type": "object",
+      "description": "事件载荷；每个事件类型的必填字段见 src/catalog.py",
+      "additionalProperties": true
     }
   },
   "additionalProperties": true
